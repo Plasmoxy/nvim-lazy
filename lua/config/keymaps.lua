@@ -71,3 +71,11 @@ Map("i", "<A-k>", "<esc><cmd>m .+1<cr>==gi", { desc = "Move down", silent = true
 Map("i", "<A-j>", "<esc><cmd>m .-2<cr>==gi", { desc = "Move up", silent = true })
 Map("v", "<A-k>", ":m '>+1<cr>gv=gv", { desc = "Move down", silent = true })
 Map("v", "<A-j>", ":m '<-2<cr>gv=gv", { desc = "Move up", silent = true })
+
+-- Sebubub aditional
+vim.keymap.set('n', 'ss', ':w<CR>', { noremap = true, silent = true })
+Map({ "n", "v" }, "J", "{", { silent = true })
+Map({ "n", "v" }, "K", "}", { silent = true })
+
+-- Map({ "n", "v" }, "J", "5j", { silent = true })
+-- Map({ "n", "v" }, "K", "5k", { silent = true })
